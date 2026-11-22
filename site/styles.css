@@ -41,7 +41,7 @@ body {
   width: 100%;
   max-width: 480px;
   margin: 0 auto;
-  padding: 58px 16px 8px;
+  padding: 50px 16px 0;
 }
 
 .greenery-top,
@@ -57,11 +57,11 @@ body {
 .greenery-top {
   position: relative;
   z-index: 1;
-  margin-bottom: -52px;
+  margin-bottom: -44px;
 }
 
 .greenery-bottom {
-  margin-top: 4px;
+  margin-top: 8px;
   transform: scaleY(-1);
 }
 
