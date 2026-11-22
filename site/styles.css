@@ -32,7 +32,7 @@ body {
   color: var(--text-main);
   line-height: 1.45;
   min-height: 100vh;
-  padding-bottom: 96px;
+  padding-bottom: 0;
 }
 
 .app-shell {
@@ -41,7 +41,7 @@ body {
   width: 100%;
   max-width: 480px;
   margin: 0 auto;
-  padding: 58px 16px 24px;
+  padding: 58px 16px 8px;
 }
 
 .greenery-top,
@@ -61,7 +61,7 @@ body {
 }
 
 .greenery-bottom {
-  margin-top: -12px;
+  margin-top: 4px;
   transform: scaleY(-1);
 }
 
