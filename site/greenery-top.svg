@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 130" fill="none">
+  <defs>
+    <linearGradient id="leafDark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2d532b" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#4e7a48" stop-opacity="0.78"/>
+    </linearGradient>
+    <linearGradient id="leafMid" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#5d8756" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#87ab7f" stop-opacity="0.7"/>
+    </linearGradient>
+    <linearGradient id="leafSage" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8eb086" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#b4ccb0" stop-opacity="0.65"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ліва гілка -->
+  <path d="M-10 -5 Q85 45 195 72" stroke="#5b7854" stroke-width="1.8" stroke-linecap="round" opacity="0.65"/>
+  <path d="M18 10 C32 -6, 62 -2, 66 22 C44 26, 26 22, 18 10Z" fill="url(#leafDark)"/>
+  <path d="M55 24 C74 5, 106 16, 102 42 C78 44, 60 36, 55 24Z" fill="url(#leafSage)"/>
+  <path d="M22 30 C2 42, 6 72, 32 76 C40 54, 34 38, 22 30Z" fill="url(#leafMid)"/>
+  <path d="M98 40 C122 25, 152 38, 146 64 C122 64, 105 52, 98 40Z" fill="url(#leafDark)"/>
+  <path d="M72 42 C54 58, 60 88, 86 90 C92 68, 84 52, 72 42Z" fill="url(#leafSage)"/>
+  <path d="M142 56 C168 48, 192 62, 182 84 C160 82, 148 68, 142 56Z" fill="url(#leafMid)"/>
+
+  <!-- Центральна гілка -->
+  <path d="M280 -10 Q295 40 315 88" stroke="#5b7854" stroke-width="1.6" stroke-linecap="round" opacity="0.6"/>
+  <path d="M235 -4 C252 8, 256 34, 232 42 C222 22, 224 8, 235 -4Z" fill="url(#leafSage)"/>
+  <path d="M286 18 C264 26, 258 58, 282 70 C296 52, 296 32, 286 18Z" fill="url(#leafDark)"/>
+  <path d="M300 10 C328 14, 344 42, 322 60 C304 46, 298 28, 300 10Z" fill="url(#leafMid)"/>
+  <path d="M346 -2 C368 12, 370 40, 346 48 C336 28, 338 12, 346 -2Z" fill="url(#leafSage)"/>
+  <path d="M312 58 C294 74, 302 100, 324 98 C330 80, 324 66, 312 58Z" fill="url(#leafSage)"/>
+
+  <!-- Права гілка -->
+  <path d="M610 -5 Q515 45 405 72" stroke="#5b7854" stroke-width="1.8" stroke-linecap="round" opacity="0.65"/>
+  <path d="M582 10 C568 -6, 538 -2, 534 22 C556 26, 574 22, 582 10Z" fill="url(#leafDark)"/>
+  <path d="M545 24 C526 5, 494 16, 498 42 C522 44, 540 36, 545 24Z" fill="url(#leafSage)"/>
+  <path d="M578 30 C598 42, 594 72, 568 76 C560 54, 566 38, 578 30Z" fill="url(#leafMid)"/>
+  <path d="M502 40 C478 25, 448 38, 454 64 C478 64, 495 52, 502 40Z" fill="url(#leafDark)"/>
+  <path d="M528 42 C546 58, 540 88, 514 90 C508 68, 516 52, 528 42Z" fill="url(#leafSage)"/>
+  <path d="M458 56 C432 48, 408 62, 418 84 C440 82, 452 68, 458 56Z" fill="url(#leafMid)"/>
+
+  <!-- Дрібні білі квіточки -->
+  <g opacity="0.92">
+    <circle cx="128" cy="24" r="5" fill="#fffdf7"/>
+    <circle cx="128" cy="24" r="2" fill="#d8b96a"/>
+    <circle cx="472" cy="24" r="5" fill="#fffdf7"/>
+    <circle cx="472" cy="24" r="2" fill="#d8b96a"/>
+    <circle cx="265" cy="48" r="4" fill="#fffdf7"/>
+    <circle cx="265" cy="48" r="1.6" fill="#d8b96a"/>
+    <circle cx="385" cy="44" r="4.5" fill="#fffdf7"/>
+    <circle cx="385" cy="44" r="1.8" fill="#d8b96a"/>
+  </g>
+</svg>

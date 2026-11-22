@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#F4F6F2" />
+  <title>Саме Та — Кав'ярня у Броварах | Меню та замовлення</title>
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="greenery-top" aria-hidden="true">
+    <img src="greenery-top.svg" alt="" />
+  </div>
+  <div class="app-shell">
+    <!-- Верхній Wi-Fi блок -->
+    <section class="wifi-banner" aria-label="Гостьовий Wi-Fi">
+      <div class="wifi-info">
+        <span class="wifi-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12.55a11 11 0 0 1 14.08 0" />
+            <path d="M1.42 9a16 16 0 0 1 21.16 0" />
+            <path d="M8.53 16.11a6 6 0 0 1 6.95 0" />
+            <line x1="12" y1="20" x2="12.01" y2="20" />
+          </svg>
+        </span>
+        <div>
+          <p class="wifi-label">Гостьовий Wi-Fi</p>
+          <p class="wifi-ssid" id="wifiSsid">SameTa_Guest</p>
+        </div>
+      </div>
+      <button type="button" class="btn-wifi" id="copyWifiBtn">
+        Скопіювати пароль від Wi-Fi
+      </button>
+    </section>
+
+    <!-- Шапка закладу -->
+    <header class="hero-header">
+      <img src="logo.png" alt="Саме Та — кава та десерти" class="brand-logo" />
+      <div class="hero-badge">Бровари • Затишна кав'ярня</div>
+      <h1 class="brand-title">Саме Та</h1>
+      <p class="hero-subtitle">Свіжообсмажена кава, авторські напої та домашні десерти поруч із вами</p>
+      <div class="hero-meta">
+        <span>Пн–Пт 08:00–21:00</span>
+        <span class="dot" aria-hidden="true">•</span>
+        <span>Сб–Нд 09:00–21:00</span>
+      </div>
+    </header>
+
+    <!-- Навігація за категоріями -->
+    <nav class="category-nav" aria-label="Категорії меню">
+      <div class="category-tabs" id="categoryTabs"></div>
+    </nav>
+
+    <!-- Список меню -->
+    <main class="menu-section">
+      <div class="section-heading">
+        <h2 id="activeCategoryTitle">Кава</h2>
+        <span class="items-count" id="activeCategoryCount"></span>
+      </div>
+      <div class="menu-list" id="menuList"></div>
+    </main>
+
+    <!-- Нижній блок швидких дій та контактів -->
+    <footer class="quick-actions-footer">
+      <div class="footer-card">
+        <h3>Сподобалась кава?</h3>
+        <p>Ваш відгук допомагає нам ставати кращими щодня.</p>
+        <div class="action-buttons">
+          <a id="mapsReviewLink" class="btn-primary-action" href="https://maps.app.goo.gl/YEadiReCXutTYwV27" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            Залишити відгук на Google Картах
+          </a>
+          <a id="instagramLink" class="btn-secondary-action" href="https://instagram.com/sameta.brovary" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+            </svg>
+            Instagram кав'ярні
+          </a>
+        </div>
+      </div>
+
+      <div class="location-card">
+        <div class="location-row">
+          <span class="loc-label">Адреса</span>
+          <a id="addressMapLink" href="https://maps.app.goo.gl/YEadiReCXutTYwV27" target="_blank" rel="noopener noreferrer">
+            м. Бровари, вул. Василя Симоненка, 105 ↗
+          </a>
+        </div>
+        <div class="location-row">
+          <span class="loc-label">Телефон</span>
+          <a id="phoneLink" href="tel:+380632346368">+380 63 234 63 68</a>
+        </div>
+        <div class="location-row">
+          <span class="loc-label">Графік</span>
+          <span>Пн–Пт 08:00–21:00 · Сб–Нд 09:00–21:00</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <div class="greenery-bottom" aria-hidden="true">
+    <img src="greenery-top.svg" alt="" />
+  </div>
+
+  <!-- Плаваюча панель кошика -->
+  <div class="cart-bar-wrapper" id="cartBarWrapper" aria-hidden="true">
+    <button type="button" class="cart-bar" id="openCartBtn">
+      <div class="cart-bar-left">
+        <span class="cart-badge" id="cartCountBadge">0</span>
+        <span class="cart-bar-text">Переглянути замовлення</span>
+      </div>
+      <span class="cart-bar-total" id="cartTotalPrice">0 грн</span>
+    </button>
+  </div>
+
+  <!-- Модальна шторка оформлення передзамовлення -->
+  <div class="modal-backdrop" id="orderModalBackdrop" aria-hidden="true">
+    <div class="order-sheet" role="dialog" aria-modal="true" aria-labelledby="orderModalTitle">
+      <div class="sheet-handle" aria-hidden="true"></div>
+      <div class="sheet-header">
+        <h2 id="orderModalTitle">Ваше замовлення</h2>
+        <button type="button" class="btn-close-modal" id="closeModalBtn" aria-label="Закрити">✕</button>
+      </div>
+
+      <div class="sheet-body">
+        <div class="cart-items-list" id="cartItemsList"></div>
+
+        <div class="form-group">
+          <label class="form-label">Коли ви будете?</label>
+          <div class="time-chips" id="timeChips">
+            <button type="button" class="time-chip active" data-time="Зараз (я в кав'ярні)">Зараз (я в кав'ярні)</button>
+            <button type="button" class="time-chip" data-time="Через 5 хв">Через 5 хв</button>
+            <button type="button" class="time-chip" data-time="Через 10 хв">Через 10 хв</button>
+            <button type="button" class="time-chip" data-time="Через 15 хв">Через 15 хв</button>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Спосіб оплати</label>
+          <div class="payment-methods" id="paymentMethods">
+            <button type="button" class="payment-chip active" data-payment="cash">
+              <span class="pay-icon" aria-hidden="true">☕</span>
+              <span>На касі</span>
+            </button>
+            <button type="button" class="payment-chip payment-apple" data-payment="apple_pay" aria-label="Apple Pay">
+              <svg class="pay-svg-apple" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+              </svg>
+              <span class="pay-brand-text">Pay</span>
+            </button>
+            <button type="button" class="payment-chip payment-google" data-payment="google_pay" aria-label="Google Pay">
+              <svg class="pay-svg-google" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"/>
+                <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.11-6.72-4.96H1.29v3.14C3.26 21.3 7.31 24 12 24z"/>
+                <path fill="#FBBC05" d="M5.28 14.24c-.24-.72-.38-1.49-.38-2.24s.14-1.52.38-2.24V6.62H1.29C.47 8.24 0 10.06 0 12s.47 3.76 1.29 5.38l3.99-3.14z"/>
+                <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.31 0 3.26 2.7 1.29 6.62l3.99 3.14c.95-2.85 3.6-4.96 6.72-4.96z"/>
+              </svg>
+              <span class="pay-brand-text">Pay</span>
+            </button>
+          </div>
+          <p class="payment-demo-hint" id="paymentDemoHint" hidden>Демо-режим онлайн-оплати (без реального списання коштів)</p>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="orderComment">Побажання до замовлення</label>
+          <textarea
+            id="orderComment"
+            class="comment-input"
+            rows="2"
+            placeholder="Наприклад: без цукру, на вівсяному молоці, з собою..."
+          ></textarea>
+        </div>
+      </div>
+
+      <div class="sheet-footer">
+        <div class="order-summary-row">
+          <span id="orderSummaryLabel">До сплати на касі</span>
+          <strong id="modalTotalPrice">0 грн</strong>
+        </div>
+        <button type="button" class="btn-submit-order" id="submitOrderBtn">
+          Оформити замовлення
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast-сповіщення -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="menu.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
